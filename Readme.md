@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Даня Мочалов](https://up.htmlacademy.ru/htmlcss/34/user/2017725).
-* Наставник: [Ольга Кравченко](https://htmlacademy.ru/profile/id2099441).
+* Наставник: [Ольга Кравченко](https://htmlacademy.ru/profile/id20994417).
 
 ---
 

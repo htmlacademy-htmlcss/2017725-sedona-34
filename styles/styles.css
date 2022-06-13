@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,21 +18,59 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
+  font-weight: 400;
   color: #000000;
-  background-color: #fbf7f4;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .header {
+  color: #000;
+}
+
+.navigation-button {
   color: #ffffff;
-  background-color: #000000;
+  background-image: url("../images/header-button.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.greeting-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.greeting-text {
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .navigation {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  line-height: 26px;
-  color: #000000;
-  background: #FFFFFF;
 }
 
 .navigation-logo {
@@ -40,46 +78,111 @@ body {
 }
 
 .main {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  line-height: 26px;
-  color: #000000;
-  background: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .greeting {
-  background-image: url("images/background-index.jpg");
+  background-image: url("../images/background-index.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.greeting-heading {
-  font-weight: 700;
-}
-
 .advantages {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-  background: rgba(131, 179, 211, 0.12);
-  width: 1200px;
-  height: 1535px;
   text-align: center;
 }
 
-h2{
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
+.advantages-first {
+  background: #82B3D3;
+  color: #ffffff;
+}
+
+.advantages-item-blue {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-road {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.search-text {
+  font-size: 22px;
   line-height: 26px;
 }
 
-.footer-mail{
-  background-image: url("images/background-footer.jpg");
+.search-button {
+  color: #ffffff;
+  background-image: url("../images/button-search.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
-.filter{
-  background-image: url("images/background-filter.jpg"); 
+
+.footer-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.footer-mail {
+  color: #ffffff;
+  background-image: url("../images/background-footer.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.email {
+  color: #000000;
+  ;
+}
+
+.subscribe-button {
+  background-image: url("../images/button-subscribe.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.filter {
+  color: #ffffff;
+  background-image: url("../images/background-filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.cost-selection-button-apply {
+  background-image: url("../images/button-apply.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.menu-info {
+  background-image: url("../images/button-filter.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.menu-favorite {
+  background-image: url("../images/menu-favorite.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.menu-favorite-added{
+  background-image: url("../images/favorite-active-button.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.rating{
+  background-image: url("../images/rating-backcolor.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.pagination-value{
+  background-image: url("../images/pagination.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.footer-number {
+  font-size: 40px;
+  line-height: 40px;
 }

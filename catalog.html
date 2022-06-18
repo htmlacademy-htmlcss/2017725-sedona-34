@@ -8,11 +8,11 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container">
     <nav class="navigation">
       <ul class="navigation-list">
         <li>
-          <a class="navigation-logo">
+          <a href="index.html" class="navigation-logo">
             <img class="header-logo" alt="Логотип курорт «Седона»." src="images/logo.svg">
           </a>
         </li>
@@ -23,7 +23,7 @@
           <a href="#"> О седоне</a>
         </li>
         <li class="navigation-item">
-          <a href="catalog.html"> Гостиницы</a>
+          <a> Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list">
@@ -38,21 +38,21 @@
           </a>
         </li>
         <li>
-          <a href="#" class="navigation-button"> Хочу сюда</a>
+          <a href="#" class="button brown"> Хочу сюда</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="main">
+  <main class="main container">
     <section class="filter">
-      <h1>Гостиницы Седоны</h1>
+      <h1 class="filter-heading">Гостиницы Седоны</h1>
       <ul class="filter-menu">
         <li class="filter-menu-link">
           <a href="#"><img src="images/house.svg" alt="Главная странца" class="" href="index.html"></a>
         </li>
-        <li class="filter-menu-link">
-          <a>Гостиницы</a>
+        <li>
+          <a class="filter-link">Гостиницы</a>
         </li>
       </ul>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -105,22 +105,22 @@
         <fieldset>
           <legend class="cost-selection">Стоимость, ₽:</legend>
           <label>
-            <input class="cost-selection-item" type="number" name="low cost">
+            <input class="cost-selection-item" type="number" name="low cost" placeholder="от">
           </label>
           <label>
-            <input class="cost-selection-item" type="number" name="high cost">
+            <input class="cost-selection-item" type="number" name="high cost" placeholder="до">
           </label>
           <label>
             <input class="cost-selection-range" type="range">
           </label>
         </fieldset>
-        <button class="cost-selection-button-apply" type="submit">Применить</button>
-        <button class="cost-selection-button" type="reset">Сбросить</button>
+        <button class="button" type="submit">Применить</button>
+        <button class="button reset" type="reset">Сбросить</button>
       </form>
     </section>
     <div>
       <header>
-        <h2>Найдено гостиниц: 38</h2>
+        <h2 class="hotels-found">Найдено гостиниц: 38</h2>
         <select class="option" aria-label="Сортировка">
           <option value="option-item">Сначала дешёвые</option>
           <option value="option-item">Сначала популярные</option>
@@ -155,8 +155,8 @@
               <h2 class="product-title">Amara Resort & Spa</h2>
               <p class="product-type">Гостиница</p>
               <p class="product-price">от 4000Р</p>
-              <button type="button" class="menu-info">Подробнее</button>
-              <button type="button" class="menu-favorite">В избранное</button>
+              <button type="button" class="button brown">Подробнее</button>
+              <button type="button" class="button">В избранное</button>
               <ul class="star">
                 <li><img src="images/star.svg" alt="Звезда" class="star-item"></li>
                 <li><img src="images/star.svg" alt="Звезда" class="star-item"></li>
@@ -174,8 +174,8 @@
               <h2 class="product-title">Villas at Poco Diablo</h2>
               <p class="product-type">Гостиница</p>
               <p class="product-price">от 5000Р</p>
-              <button type="button" class="menu-info">Подробнее</button>
-              <button type="button" class="menu-favorite-added">В избранное</button>
+              <button type="button" class="button brown">Подробнее</button>
+              <button type="button" class="button green">В избранное</button>
               <ul class="star">
                 <li><img src="images/star.svg" alt="Звезда" class="star-item"></li>
                 <li><img src="images/star.svg" alt="Звезда" class="star-item"></li>
@@ -193,8 +193,8 @@
               <h2 class="product-title">Desert Quail Inn</h2>
               <p class="product-type">Гостиница</p>
               <p class="product-price">от 2500Р</p>
-              <button type="button" class="menu-info">Подробнее</button>
-              <button type="button" class="menu-favorite">В избранное</button>
+              <button type="button" class="button brown">Подробнее</button>
+              <button type="button" class="button">В избранное</button>
               <ul class="star">
                 <li><img src="images/star.svg" alt="Звезда" class="star-item"></li>
                 <li><img src="images/star.svg" alt="Звезда" class="star-item"></li>
@@ -211,8 +211,8 @@
               </a>
               <p class="product-type">Гостиница</p>
               <p class="product-price">от 1500Р</p>
-              <button type="button" class="menu-info">Подробнее</button>
-              <button type="button" class="menu-favorite">В избранное</button>
+              <button type="button" class="button brown">Подробнее</button>
+              <button type="button" class="button">В избранное</button>
               <ul class="star">
                 <li><img src="images/star.svg" alt="Звезда" class="star-item"></li>
                 <li><img src="images/star.svg" alt="Звезда" class="star-item"></li>
@@ -226,7 +226,7 @@
       <footer>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-value">1</a>
+            <a class="pagination-value-first">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-value" href="#">2</a>
@@ -254,15 +254,15 @@
     </div>
   </main>
 
-  <footer class="footer">
-    <section class="footer-mail">
-      <h2>Подпишитесь на рассылку</h2>
+  <footer class="footer container">
+    <section class="footer-catalog">
+      <h2 class="subscribe-heading">Подпишитесь на рассылку</h2>
       <p class="footer-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/courses" method="get">
         <label class="email">
-          Ваш e-mail <input type="text" name="email">
+          <input type="text" name="email" placeholder="Ваш e-mail">
         </label>
-        <input type="submit" value="Подписаться" class="subscribe-button">
+        <input type="submit" value="Подписаться" class="button">
       </form>
     </section>
     <section class="footer-contact">
@@ -284,7 +284,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer-number" href="+78128121212">+7(812) 812-12-12</a>
+      <a class="footer-number" href="tel:+78128121212">+7(812) 812-12-12</a>
       <a href="#"><img src="images/HTML-logo.svg" width="114.9" height="32.9" alt="Логотип академии" /></a>
     </section>
   </footer>

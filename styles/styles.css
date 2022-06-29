@@ -71,10 +71,18 @@ a {
 p {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
+}
+
+.li {
+  display: inline-flex;
 }
 
 .header {
   color: #000;
+  display: grid;
+  padding: 15px;
+
 }
 
 .navigation-button {
@@ -87,15 +95,41 @@ p {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
 }
 
 .greeting-text {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .navigation {
   font-weight: 700;
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  
+  display: flex;
+  width: 390px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 390px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  display: flex;
+  max-width: 264px;
+  margin-left: auto;
+  list-style: none;
+  max-width: 264px;
+  margin-left: auto;
 }
 
 .navigation-logo {
@@ -107,14 +141,28 @@ p {
 }
 
 .greeting-img {
+  padding-left: 371px;
+  padding-right: 371px;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  display: block;
+  margin: 0 auto;
   background-image: url("../images/background-index.jpg");
-  background-size: 100% auto;
+  background-size: 1200px 458px;
   background-repeat: no-repeat;
 }
 
 .advantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
   font-size: 18px;
   text-align: center;
+}
+
+.advantages-heading-img {
+  grid-column-start: 2;
+  grid-column-end: -1;
 }
 
 .advantages-heading {
@@ -123,17 +171,47 @@ p {
   line-height: 28px;
 }
 
-.advantages-first {
-  background: #82B3D3;
-  color: #ffffff;
+.advantages-list {
+  grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.advantages-blue {
-  background: rgba(131, 179, 211, 0.12);
+.advantages-item {
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 80px;
+  padding-bottom: 81px;
+  width: 230px;
+  height: 224px;
 }
 
-.advantages-item-road {
+.blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.first {
+  background-color: #82B3D3;
+}
+
+.eat {
+  background-color: #ffffff;
+}
+
+.bridge {
+  background-color: #82B3D3;
+}
+
+.road {
   background: rgba(131, 179, 211, 0.2);
+}
+
+.search {
+  text-align: center;
 }
 
 .search-title {
@@ -171,6 +249,9 @@ p {
 .footer-mail {
   color: #ffffff;
   background-image: url("../images/background-footer.jpg");
+  text-align: center;
+  width: 1200px;
+  height: 411px;
 }
 
 .filter {
@@ -204,6 +285,8 @@ p {
 .footer-number {
   font-size: 40px;
   line-height: 40px;
+  grid-column-start: 2;
+    grid-column-end: 2;
 }
 
 .cost-selection-item {
@@ -244,4 +327,21 @@ html {
   border: 2px solid #000000;
   border-radius: 4px;
   padding: 14px 12px;
+}
+
+.footer-contact{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social{
+  grid-column-start: 1;
+    grid-column-end: 1;
+    display: flex;
+    list-style: none;
+}
+
+.footer-logo{
+  grid-column-start: 3;
+    grid-column-end: 3;
 }

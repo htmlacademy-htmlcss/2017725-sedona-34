@@ -57,12 +57,6 @@ body {
   background-color: transparent;
 }
 
-.container {
-  background-color: #ffffff;
-  width: 1200px;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   color: #000000;
@@ -81,8 +75,8 @@ p {
 .header {
   color: #000;
   display: grid;
-  padding: 15px;
-
+  width: 1200px;
+  height: 65px;
 }
 
 .navigation-button {
@@ -111,8 +105,14 @@ p {
   margin: 0 auto;
 }
 
+.navigation-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 34px;
+}
+
 .navigation-list {
-  
+
   display: flex;
   width: 390px;
   margin: 0;
@@ -125,11 +125,12 @@ p {
 
 .navigation-user {
   display: flex;
+ 
+  
   max-width: 264px;
   margin-left: auto;
-  list-style: none;
-  max-width: 264px;
-  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 14px;
 }
 
 .navigation-logo {
@@ -150,6 +151,10 @@ p {
   background-image: url("../images/background-index.jpg");
   background-size: 1200px 458px;
   background-repeat: no-repeat;
+}
+
+.greeting-block{
+height: 282px;
 }
 
 .advantages {
@@ -173,9 +178,9 @@ p {
 
 .advantages-list {
   grid-column-start: 1;
-    grid-column-end: -1;
-    display: flex;
-    list-style: none;
+  grid-column-end: -1;
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -212,6 +217,7 @@ p {
 
 .search {
   text-align: center;
+  height: 417px;
 }
 
 .search-title {
@@ -286,7 +292,7 @@ p {
   font-size: 40px;
   line-height: 40px;
   grid-column-start: 2;
-    grid-column-end: 2;
+  grid-column-end: 2;
 }
 
 .cost-selection-item {
@@ -329,19 +335,30 @@ html {
   padding: 14px 12px;
 }
 
-.footer-contact{
-  display:grid;
+.footer-contact {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.social{
+.social {
   grid-column-start: 1;
-    grid-column-end: 1;
-    display: flex;
-    list-style: none;
+  grid-column-end: 1;
+  display: flex;
+  list-style: none;
 }
 
-.footer-logo{
+.footer-logo {
   grid-column-start: 3;
-    grid-column-end: 3;
+  grid-column-end: 3;
+}
+
+.header-button {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+fieldset{
+  border-style: none
 }

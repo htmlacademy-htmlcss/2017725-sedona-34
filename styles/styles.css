@@ -110,31 +110,32 @@ p {
   display: flex;
   height: 65px;
   align-items: center;
-  justify-content: space-between;
   margin: 0px 70px 0px 70px;
 }
 
-.navigation-item {}
+.navigation-item {
+  margin-right: 34px;
+}
 
 .navigation-list {
   display: flex;
-  width: 390px;
   list-style: none;
-  width: 390px;
-  gap: 34px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-left: 70px;
 }
 
 .navigation-user {
-  gap: 0px;
-  width: 293px;
+  margin-left: 277px;
 }
 
 .navigation-favorite {
-  margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 32px;
 }
+
+.navigation-basket {}
 
 .main {
   text-decoration: none;
@@ -145,7 +146,7 @@ p {
   background-image: url("../images/background-index.jpg");
   background-size: 1200px 485px;
   background-repeat: no-repeat;
-  height: 485px;
+  padding: 59px;
 }
 
 .greeting-img-photo {
@@ -176,6 +177,18 @@ p {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
+}
+
+.advantages-heading-svg {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.advantages-description-svg {
+  margin-top: 30px;
 }
 
 .advantages-number {
@@ -251,6 +264,8 @@ p {
 
 .search-button {
   margin-top: 56px;
+  display: block;
+  padding: 13px;
 }
 
 .rating {
@@ -269,6 +284,7 @@ p {
 .type {
   padding: 0;
   margin: 0;
+  margin-right: 175px;
 }
 
 .product-type {
@@ -324,6 +340,8 @@ p {
   font-size: 22px;
   line-height: 26px;
   margin-top: 29px;
+  margin-right: 130px;
+  margin-left: 130px;
 }
 
 .footer-mail {
@@ -339,6 +357,9 @@ p {
 }
 
 .mail-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 46px;
 }
 
@@ -346,12 +367,12 @@ p {
   color: #ffffff;
   background-image: url("../images/background-filter.jpg");
   padding: 35px 70px 70px 70px;
+  background-repeat: no-repeat;
 }
 
 .filter-form {
   display: flex;
   padding-top: 40px;
-  justify-content: space-between;
 }
 
 .filter-menu {
@@ -389,7 +410,6 @@ p {
 
 .header-catalog {
   display: flex;
-  justify-content: space-between;
   padding: 60px 71px 62px 72px;
 }
 
@@ -398,6 +418,8 @@ p {
   padding: 0;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  width: 290px;
+  margin-right: 78px;
 }
 
 .page-layout {
@@ -414,6 +436,7 @@ p {
   line-height: 36px;
   margin: 0;
   padding: 0;
+  margin-right: 191px;
 }
 
 .footer-number {
@@ -421,27 +444,32 @@ p {
   line-height: 40px;
   grid-column-start: 2;
   grid-column-end: 2;
+  margin-right: 235px;
 }
 
 .cost {
   padding: 0;
   margin: 0;
+  margin-right: 70px;
 }
 
-.cost-selection-item {
-  opacity: 0.3;
+.from{
+  border-radius: 4px 0 0 4px;
+}
+.to{
+  border-radius: 0px 4px 4px 0px;
 }
 
 .pagination {
   display: flex;
-  width: 400px;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: 270px;
 }
 
 .pages-number {
-  margin-left: 270px;
+  margin-right: 51px;
 }
 
 .pages-number-list {
@@ -475,7 +503,6 @@ p {
   padding: 96px 71px 25px 73px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .container {
@@ -504,7 +531,6 @@ html {
 .footer-contact {
   display: flex;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
   padding: 45px 70px 35px 80px;
 }
 
@@ -519,6 +545,8 @@ html {
   grid-column-end: 1;
   display: flex;
   list-style: none;
+  padding: 0;
+  margin-right: 250px
 }
 
 .footer-logo {
@@ -557,4 +585,59 @@ fieldset {
 .infrastructure {
   padding: 0;
   margin: 0;
+  margin-right: 70px;
+}
+
+.filter-buttons {
+  display: grid;
+}
+
+.cost-selection-range {
+  margin: 0;
+  margin-top: 32px;
+}
+
+.cost-selection-list {
+  display: flex;
+}
+
+.cost-selection-item {
+  width: 143px;
+  margin-top: 34px;
+  border: 2px solid #FFFFFF;
+  opacity: 0.3;
+}
+
+.filter-item {
+  margin-top: 15px;
+}
+
+.filter-item-first {
+  margin-top: 30px;
+}
+
+.navigation-link {
+  position: relative;
+  display: block;
+  padding: 24px 19px;
+  font-family: "PT Sans Narrow", sans-serif;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.search-input {
+  padding: 41px 213px 0 213px;
+  background: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  border: 0;
+}
+
+.mail-button {
+  padding: 40px 56px 0 56px;
+  border-radius: 0px 10px 10px 0px;
 }

@@ -22,7 +22,7 @@
             <a href="#"> О седоне</a>
           </li>
           <li class="navigation-item">
-            <a> Гостиницы</a>
+            <a class="hotels"> Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -62,7 +62,12 @@
         <h1 class="filter-heading">Гостиницы Седоны</h1>
         <ul class="filter-menu">
           <li class="filter-menu-link">
-            <a href="#"><img src="images/house.svg" alt="Главная странца" class="" href="index.html"></a>
+            <a href="#"><img src="images/house.svg" alt="Главная странца" class="house-svg" href="index.html"></a>
+          </li>
+          <li><svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m5.051 4.075-3.8-3.4c-.2-.2-.6-.2-.9 0-.3.2-.2.6 0 .8l3.3 3-3.2 3c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z"
+                fill="#fff" /></svg>
           </li>
           <li>
             <a class="filter-link">Гостиницы</a>
@@ -73,21 +78,24 @@
             <legend class="filter-title">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item-first">
-                <label>
-                  <input class="filter-pool" type="checkbox" name="pool" checked>
-                  Бассейн
+                <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span></span>
+                  <div>Бассейн</div>
                 </label>
               </li>
               <li class="filter-item">
-                <label>
-                  <input class="filter-parking" type="checkbox" name="parking" checked>
-                  Парковка
+                <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span></span>
+                  <div>Парковка</div>
                 </label>
               </li>
               <li class="filter-item">
-                <label>
-                  <input class="filter-wifi" type="checkbox" name="wifi">
-                  wi-fi
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span></span>
+                  <div>wi-fi</div>
                 </label>
               </li>
             </ul>
@@ -97,19 +105,22 @@
             <ul class="filter-list">
               <li class="filter-item-first">
                 <label>
-                  <input class="filter-hotel" type="radio" name="Hotel" checked>
+                  <input class="radio-btn" type="radio" name="radio-btn" checked>
+                  <span class="custom-radio-btn"></span>
                   Гостиница
                 </label>
               </li>
               <li class="filter-item">
                 <label>
-                  <input class="filter-motel" type="radio" name="Motel">
+                  <input class="radio-btn" type="radio" name="radio-btn">
+                  <span class="custom-radio-btn"></span>
                   Мотель
                 </label>
               </li>
               <li class="filter-item">
                 <label>
-                  <input class="filter-appartaments" type="radio" name="Appartaments">
+                  <input class="radio-btn" type="radio" name="radio-btn">
+                  <span class="custom-radio-btn"></span>
                   Аппартаменты
                 </label>
               </li>
@@ -119,14 +130,10 @@
             <legend class="cost-selection">Стоимость, ₽:</legend>
             <div class="cost-selection-list">
               <label>
-                <div class="from-border">
-                  <input class="cost-selection-item from" type="number" name="low cost" placeholder="от">
-                </div>
+                <input class="cost-selection-item from" type="number" name="low cost" placeholder="от">
               </label>
               <label>
-                <div class="from-border">
-                  <input class="cost-selection-item to" type="number" name="high cost" placeholder="до">
-                </div>
+                <input class="cost-selection-item to" type="number" name="high cost" placeholder="до">
               </label>
             </div>
             <div class="range">
@@ -157,17 +164,17 @@
           </select>
           <ul class="page-layout">
             <li>
-              <button type="button" class="button location-button">
+              <button type="button" class=" location" autofocus>
                 <img src="images/location-grid.svg">
               </button>
             </li>
             <li>
-              <button type="button" class="button location">
+              <button type="button" class=" location">
                 <img src="images/location-main.svg">
               </button>
             </li>
             <li>
-              <button type="button" class="button location">
+              <button type="button" class=" location">
                 <img src="images/location-list.svg">
               </button>
             </li>
@@ -289,32 +296,31 @@
         <p class="footer-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mail-form" action="https://echo.htmlacademy.ru/courses" method="get">
           <label class="email">
-            <input type="text" name="email" placeholder="Ваш e-mail">
+            <input class="search-input" type="text" name="email" placeholder="Ваш e-mail">
           </label>
-          <input type="submit" value="Подписаться" class="button">
+          <input type="submit" value="Подписаться" class="button subscribe-button">
         </form>
       </section>
       <section class="footer-contact">
-        <h2 class="visually-hidden" alt="Контактная информация"></h2>
         <ul class="social">
           <li>
-            <a href="#" class="vkontakte-logo">
+            <a href="#" class="footer-link vkontakte-logo">
               <img src="images/Vkontakte.svg" width="24" height="14" alt="Логотив ВК" />
             </a>
           </li>
           <li>
-            <a href="#" class="telegram-logo">
+            <a href="#" class="footer-link telegram-logo">
               <img src="images/Telegram.svg" width="18" height="15.1" alt="Логотип ТГ" />
             </a>
           </li>
           <li>
-            <a href="#" class="youtube-logo">
+            <a href="#" class="footer-link youtube-logo">
               <img src="images/YouTube.svg" width="22" height="17" alt="Логотип ЮТ" />
             </a>
           </li>
         </ul>
-        <a class="footer-number" href="tel:+78128121212">+7(812) 812-12-12</a>
-        <a class="footer-logo" href="#"><img src="images/HTML-logo.svg" width="114.9" height="32.9"
+        <a class="footer-link footer-number" href="tel:+78128121212">+7(812) 812-12-12</a>
+        <a class="footer-link footer-logo" href="#"><img src="images/HTML-logo.svg" width="114.9" height="32.9"
             alt="Логотип академии" /></a>
       </section>
     </footer>

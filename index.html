@@ -16,7 +16,7 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a>Главная</a>
+            <a class="first-page">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#"> О седоне</a>
@@ -59,6 +59,12 @@
       <section class="greeting">
         <div class="greeting-img">
           <img class="greeting-img-photo" src="images/welcome.svg" width="458" height="352" alt="Приветствие">
+          <div class="triangles">
+            <div class="triangles-triangle triangles-triangle-left-left"> </div>
+            <div class="triangles-triangle triangles-triangle-left-right"></div>
+            <div class="triangles-triangle triangles-triangle-right-left"></div>
+            <div class="triangles-triangle triangles-triangle-right-right"></div>
+          </div>
         </div>
         <div class="greeting-block">
           <h1 class="greeting-heading">Седона — небольшой городок в Аризоне,
@@ -166,32 +172,97 @@
           <label class="email">
             <input class="search-input" type="text" name="email" placeholder="Ваш e-mail">
           </label>
-          <a type="submit" class="button mail-button">Подписаться</a>
+          <input type="submit" value="Подписаться" class="button subscribe-button">
         </form>
       </section>
       <section class="footer-contact">
         <ul class="social">
           <li>
-            <a href="#" class="vkontakte-logo">
+            <a href="#" class="footer-link vkontakte-logo">
               <img src="images/Vkontakte.svg" width="24" height="14" alt="Логотив ВК" />
             </a>
           </li>
           <li>
-            <a href="#" class="telegram-logo">
+            <a href="#" class="footer-link telegram-logo">
               <img src="images/Telegram.svg" width="18" height="15.1" alt="Логотип ТГ" />
             </a>
           </li>
           <li>
-            <a href="#" class="youtube-logo">
+            <a href="#" class="footer-link youtube-logo">
               <img src="images/YouTube.svg" width="22" height="17" alt="Логотип ЮТ" />
             </a>
           </li>
         </ul>
-        <a class="footer-number" href="tel:+78128121212">+7(812) 812-12-12</a>
-        <a class="footer-logo" href="#"><img src="images/HTML-logo.svg" width="114.9" height="32.9"
+        <a class="footer-link footer-number" href="tel:+78128121212">+7(812) 812-12-12</a>
+        <a class="footer-link footer-logo" href="#"><img src="images/HTML-logo.svg" width="114.9" height="32.9"
             alt="Логотип академии" /></a>
       </section>
     </footer>
+  </div>
+
+
+
+  <div class="modal-container">
+    <div class="modal modal-search">
+      <section class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <svg class="close-button" width="53" height="53" viewBox="0 0 53 53" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26.5" cy="26.5" r="26.5" fill="#F2F2F2" />
+              <path
+                d="M33 21.2 31.8 20l-5.3 5.3-5.3-5.3-1.2 1.2 5.3 5.3-5.3 5.3 1.2 1.2 5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3 5.3-5.3Z"
+                fill="#000" /></svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="group-check-in">Дата заезда:
+            <label class="visually-hidden" for="auth-login">27 апреля 2020</label>
+            <input class="search-check-in" type="text" id="check-in" name="check-in" placeholder="Укажите дату">
+          </p>
+          <p class="error" >Мы не можем отправить вас в прошлое.</p>
+          <p class="group-check-out">Дата выезда:
+            <label class="visually-hidden" for="auth-password">1 сентября 2021</label>
+            <input class="search-check-out" type="password" id="auth-password" name="auth-password"
+              placeholder="Укажите дату">
+          </p>
+          <p class="warning" >На эти даты есть свободные номера. Пока есть.</p>
+          <div class="quantity">
+            <div class="first-quantity">
+              <div>Взрослые:</div>
+              <div class="modal-quantity">
+                <button class="first-modal-button"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg></button>
+                <input type="number" class="modal-input">
+                <button class="modal-button"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" /></svg></button>
+              </div>
+            </div>
+            <div class="second-quantity">
+              <div>Дети:</div>
+              <svg class="svg-info" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
+                <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" fill="#fff" /></svg>
+              <div class="modal-quantity info">
+                <button class="second-modal-button"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg></button>
+                <input type="number" class="modal-input">
+                <button class="modal-button"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" /></svg></button>
+              </div>
+            </div>
+          </div>
+          <button class="modal-search-button">Найти</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 

@@ -55,9 +55,14 @@ body {
 
 .reset {
   background-color: transparent;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
-.apply {}
+.apply {
+  padding: 10px;
+  margin-top: 60px;
+}
 
 a {
   text-decoration: none;
@@ -453,10 +458,11 @@ p {
   margin-right: 70px;
 }
 
-.from{
+.from {
   border-radius: 4px 0 0 4px;
 }
-.to{
+
+.to {
   border-radius: 0px 4px 4px 0px;
 }
 
@@ -588,13 +594,12 @@ fieldset {
   margin-right: 70px;
 }
 
-.filter-buttons {
-  display: grid;
-}
+.filter-buttons {}
 
 .cost-selection-range {
   margin: 0;
   margin-top: 32px;
+  width: 288px;
 }
 
 .cost-selection-list {
@@ -602,10 +607,11 @@ fieldset {
 }
 
 .cost-selection-item {
-  width: 143px;
+  width: 113px;
   margin-top: 34px;
-  border: 2px solid #FFFFFF;
-  opacity: 0.3;
+  border: 3px solid #FFFFFF;
+  background: rgba(0, 0, 0, .1);
+  padding: 13px;
 }
 
 .filter-item {
@@ -640,4 +646,57 @@ fieldset {
 .mail-button {
   padding: 40px 56px 0 56px;
   border-radius: 0px 10px 10px 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, .1);
+}
+
+.range-bar {
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #ffffff;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;;
+} 
+
+.toggle-min {
+  top: -8px;
+  left: 0px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 50px;
 }

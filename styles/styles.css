@@ -1060,11 +1060,16 @@ fieldset {
 .search-check-in {
   margin-left: 42px;
   padding: 15px 278px 14px 19px;
+  background: #F2F2F2;
+  border: none;
+  background-image: url(/images/calendar.svg);
 }
 
 .search-check-out {
   margin-left: 36px;
   padding: 15px 278px 14px 19px;
+  background: #F2F2F2;
+  border: none;
 }
 
 .modal-button {
@@ -1116,18 +1121,60 @@ fieldset {
 }
 
 .info {
-  margin-left: 18px;
+  margin-left: 43px;
 }
 
 .error {
   line-height: 21px;
   color: #FF5757;
   font-size: 16px;
-  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .warning {
   font-size: 16px;
   line-height: 21px;
-  margin-left: 25px;
+  margin-left: 70px;
+}
+
+.quantity-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.tooltip {
+  position: absolute;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 8px;
+  display: block;
+  width: 256px;
+  margin-top: 15px;
+  margin-left: -125px;
+  display: none;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: block;
+}
+
+.modal-container-close{
+  display: none;
 }
